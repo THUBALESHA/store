@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepUp Sneakers | Premium Footwear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Basic Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f5f5f5; color: #333; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Header */
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 { font-weight: 600; font-size: 1.8rem; }
+        nav a { margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: #ff9900; }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1595950653289-bf7a591c9b28?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+            text-align: center;
+        }
+        .hero h2 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+        .hero a { background-color: #ff9900; padding: 12px 30px; border-radius: 5px; font-weight: 600; transition: 0.3s; }
+        .hero a:hover { background-color: #e68a00; }
+
+        /* Products Section */
+        .products {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .products h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; font-weight: 600; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        .product-card img { width: 100%; height: 250px; object-fit: cover; }
+        .product-card .content { padding: 20px; }
+        .product-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .product-card p { font-size: 1rem; color: #777; margin-bottom: 15px; }
+        .product-card a { display: inline-block; background-color: #111; color: #fff; padding: 10px 20px; border-radius: 5px; font-weight: 500; transition: 0.3s; }
+        .product-card a:hover { background-color: #ff9900; }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 40px;
+            margin-top: 60px;
+        }
+        footer a { color: #ff9900; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>THUBALESHA Sneakers</h1>
+        <nav>
+            <a href="#products">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="products">products</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Premium Sneakers for Every Step</h2>
+            <p>Discover the latest styles from top brands, hand-picked for your comfort and performance.</p>
+            <a href="#products">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Featured Sneakers</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618354695194-c37f383eb6f6?auto=format&fit=crop&w=800&q=80" alt="Nike Air Max">
+                <div class="content">
+                    <h3>Nike Air Max 270</h3>
+                    <p>Comfortable, stylish, and perfect for daily wear.</p>
+                    <a href="https://www.nike.com/t/air-max-270-mens-shoes-XYZ123" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600180758895-ef68c1e82827?auto=format&fit=crop&w=800&q=80" alt="Adidas Ultraboost">
+                <div class="content">
+                    <h3>Adidas Ultraboost 22</h3>
+                    <p>Boost your stride with ultimate energy return technology.</p>
+                    <a href="https://www.adidas.com/us/ultraboost-22-shoes" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618354719395-3b0f5b4c4ff5?auto=format&fit=crop&w=800&q=80" alt="Puma RS-X">
+                <div class="content">
+                    <h3>Puma RS-X³</h3>
+                    <p>Bold, dynamic sneakers with a modern streetwear vibe.</p>
+                    <a href="https://us.puma.com/us/en/pd/rs-x3-sneakers" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1628602561551-b8f35f2a1f44?auto=format&fit=crop&w=800&q=80" alt="New Balance 550">
+                <div class="content">
+                    <h3>New Balance 550</h3>
+                    <p>Classic design meets modern comfort and durability.</p>
+                    <a href="https://www.newbalance.com/pd/550" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="products" id="about">
+        <h2>About StepUp Sneakers</h2>
+        <p style="text-align:center; max-width:800px; margin:0 auto 60px auto; font-size:1.1rem; color:#555;">
+            StepUp Sneakers is dedicated to delivering premium footwear for style and performance. 
+            We curate the best sneakers from leading brands worldwide, ensuring every step you take is 
+            comfortable, stylish, and confident.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="products" id="contact">
+        <h2>Contact Us</h2>
+        <p style="text-align:center; max-width:800px; margin:0 auto 30px auto; font-size:1.1rem; color:#555;">
+            Questions? Collaborations? Reach out to us at <a href="mailto:info@stepupsneakers.com">info@stepupsneakers.com</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 StepUp Sneakers. All rights reserved. 
+        <br>
+        <a href="#products">Shop</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+    </footer>
+
+</body>
+</html>
